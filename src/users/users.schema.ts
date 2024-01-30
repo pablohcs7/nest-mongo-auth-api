@@ -4,7 +4,10 @@ import { Document } from 'mongoose';
 @Schema({ timestamps: true })
 export class Users extends Document {
   @Prop({type: String, required: true })
-  name: string;
+  firstName: string;
+
+  @Prop({type: String, required: true })
+  lastName: string;
 
   @Prop({type: String, required: true })
   email: string;
@@ -17,6 +20,9 @@ export class Users extends Document {
 
   @Prop({type: Number, required: true })
   height: number;
+
+  @Prop({type: String, required: true})
+  gender: string;
 
   @Prop({type: Number, required: true })
   weight: number;

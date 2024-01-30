@@ -11,7 +11,7 @@ import { UsersModule } from './users/users.module';
       isGlobal: true,
     }),
     MongooseModule.forRoot(process.env.DATABASE_URI),
-    AuthModule,
+    // AuthModule,
     UsersModule,
   ],
   controllers: [],
